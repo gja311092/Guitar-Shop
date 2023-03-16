@@ -340,7 +340,10 @@ button{
   background-color: var(--blanco);
   box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
   overflow: hidden;
+  justify-content: center;
+  margin: auto;
 }
+
 
 .carrousel .grande {
   width: 200%;
@@ -355,6 +358,7 @@ button{
   padding: 2em;
   transition: all 0.5s ease;
   transform: translateX(0%);
+
 }
 
 .carrousel .img {
@@ -392,3 +396,7 @@ button{
 .carrousel .punto.activo {
   background-color: lightblue;
 }
+
+.productos{
+ display: flex;
+  justify-content: center;}
