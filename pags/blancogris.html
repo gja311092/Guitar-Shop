@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400|Oswald:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <small>Cambiar color</small>
+    </div>
+
+    <section>
+        <div class="heading">
+            <h1>Guitar Shop <b>Página para evaluar el color blanco y gris</b></h1>
+            <p>Esta prueba está diseñada para probar la accesibilidad</p>
+            <a href=".././index.html" class="btn-primary">Regresa al <b>Index</b></a>
+        </div>
+    </section>
+
+    <script>
+        const colorSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+        function switchColor(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'gris');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+        colorSwitch.addEventListener('change', switchColor, false);
+
+    </script>
+
+</body>
+
+</html>
