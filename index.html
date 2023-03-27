@@ -2,14 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- CSS y Bootstrap -->
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel=“canonical” href=”http://pract.cf/”/> 
 	<script src="js/bootstrap.min.js"></script>
-	<script defer src="js/app.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 	<!-- Iconos -->
 	<link rel="icon" href="img/logo.png">
@@ -22,6 +21,27 @@
     <meta name="author" content="Gerardo Javier Avila">
 </head>
 <body>
+	<script >
+		window.onload = function(){
+			var contenedor = document.getElementById ('spinner');
+			contenedor.style.visibility = 'hidden';
+			contenedor.style.opacity = '0';
+		}
+	</script>
+
+	<div id="spinner">
+		<img src="img/fondo.jpg" alt="Fondo del Reino">
+		<div id= "carga" class="spinner-grow text-white">
+			
+		</div>
+	</div>
+
+
+
+	
+<div class= "header position-relative">
+	<video src="video/guitar.mp4" autoplay loop muted playsinline></video>
+</div>
 
 	<header class="navegacion">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark  fixed-top text-uppercase pt-4">
@@ -43,7 +63,7 @@
 							</li>
       
                 <li class="nav-item dropdown">
-								<a class="nav-link text-reset boton rounded-circle" href="#" data-bs-toggle="dropdown"><span class="bi bi-music-player-fill"></span> Guitarras</a>
+								<a class="nav-link text-reset boton rounded-circle" href="#"data-bs-toggle="dropdown"><span class="bi bi-music-player-fill"></span> Guitarras</a>
 								<ul class="dropdown-menu">
 									<li><a class="dropdown-item" href="./pags/guitarraselectricas.html">Eléctricas</a></li>
 									<li><a class="dropdown-item" href="./pags/guitarrasacusticas.html">Acústicas</a></li>
@@ -55,11 +75,15 @@
 							  <li class="nav-item">
 								<a class="nav-link text-reset boton rounded-circle" href="./pags/historia.html"><span class="bi bi-map-fill"></span> Historia</a>
 							</li>
-							  <li class="nav-item">
-								<a class="nav-link text-reset boton rounded-circle" href="./pags/blancogris.html"><span class="bi bi-palette-fill"></span> Blanco/Gris</a>
+							<li class="nav-item">
+								<a class="nav-link text-reset boton rounded-circle" href="./pags/sesion.html"><span class="bi bi-person-plus-fill"></span> Sesión</a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-reset boton rounded-circle" href="./pags/registro.html"><span class="bi bi-info-circle-fill"></span> Registro/Ubicación</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-reset boton rounded-circle" href="./pags/letraaumentada.html"><span class="bi bi-card-text"></span> Tamaño Letra</a>
+								<a class="nav-link text-reset boton rounded-circle" href="./pags/ofertas.html"><span class="bi bi-speaker-fill"></span> ¡Ofertas!</a>
 							</li>
               </ul>
             </div>
@@ -67,22 +91,8 @@
         </nav>
     </header>
 
-<div class="carrousel">
-	<div class="grande"> 
-		<img src="img/00000000.jpg" alt="carrousel 1" class="img">
-		<img src="img/00000002.jpg" alt="carrousel 2" class="img">
-		<img src="img/00000003.jpg" alt="carrousel 3" class="img">
-		<img src="img/00000004.jpg" alt="carrousel 4" class="img">
-	</div>
-	<ul class="puntos">
-		<li class="punto activo"></li>
-		<li class="punto"></li>
-		<li class="punto activo"></li>
-		<li class="punto"></li>
-	</ul>
-</div>
 
-<br>
+
 <h2>Nuestros Productos</h2>
 </div>
 <div class="row">
@@ -116,21 +126,12 @@
 	<img src="img/c.png"alt="Guitarra completa">
 	<h2 class="card-title">Conócenos</h2>
     <p class="card-text">Estamos ubicados ubicados en Baker Street 221b. Esta es la única sucursal que tenemos actualmente; contamos con envíos internacionales, no dudes en preguntar sobre precios, estamos para servirte. En nuestro servicio hablamos los idiomas más comunes dentro de la población.</p>
-<a href="./pags/registro.php"><img src="img/boton3.png" alt="boton3"></a>
+<a href="./pags/registro.html"><img src="img/boton3.png" alt="boton3"></a>
 </center>
 </div>
 </div>
 
 </div>
-
-				<h2>Nuestra Ubicación</h2>
-				<br>
-        <div class="productos">
-        <div class="google-maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.4248513434086!2d-0.1585557!3d51.523767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20Reino%20Unido!5e0!3m2!1ses-419!2smx!4v1670431806878!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        </div>
-
 
 <br>
 <section class="section-padding">
@@ -138,23 +139,23 @@
     <div class="row">
       <div class="col-lg-10 col-12 text-center nx-auto">
       </div>
-      
+      <center>
       	<h2 class="mb-5">¡Visita nuestra Tienda!</h2>
-      	<div class="productos">
       <div class="col-lg-9 col-md-6 col-12 mb-4 mb-lg-0">
         <div class="forma-block d-flex justify-content-center align-items-center">
         <a href="./pags/guitarrasacusticas.html" class="d-block">
           <img src="img/36.jpg" class="forma-block-img img-fluid" alt="fender">
           <p class="forma-block-text"><strong>Clásico</strong></p>
-          <div class="forma-block d-flex justify-content-center align-items-center"></a> 	
+          <div class="forma-block d-flex justify-content-center align-items-center">
         <a href="./pags/guitarraselectricas.html" class="d-block">
           <img src="img/32.jpg" class="forma-block-img img-fluid" alt="gibson">
           <p class="forma-block-text"><strong>Moderno</strong></p>
-          <div class="forma-block d-flex justify-content-center align-items-center"></a> 	
-        <a href="./pags/historia.html" class="d-block">
+          <div class="forma-block d-flex justify-content-center align-items-center">
+        <a href="./pags/sesion.html" class="d-block">
           <img src="img/37.jpg" class="forma-block-img img-fluid" alt="jackson">
-          <p class="forma-block-text"><strong>Nuestra Historia</strong></p></a>  
-          </div>
+          <p class="forma-block-text"><strong>Inicia Sesión</strong></p>
+          </center>
+          </a>
       </div>
     </div>
   </div>
@@ -182,12 +183,12 @@
 
 			</div>
 		</div>
-
+		<center>
+		
+		</center>
 	</div>
 
 
 
 </body>
 </html>
-
-
